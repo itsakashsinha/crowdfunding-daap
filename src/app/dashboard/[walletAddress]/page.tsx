@@ -213,7 +213,7 @@ const CreateCampaignModal = ({ setIsModalOpen, refetch }: CreateCampaignModalPro
                     ></textarea>
                     <label>Campaign Goal:</label>
                     <input
-                        type="text"
+                        type="number"
                         value={campaignGoal}
                         onChange={(e) => handleCampaignGoal(parseInt(e.target.value))}
                         className="mb-4 px-4 py-2 bg-slate-300 rounded-md"
