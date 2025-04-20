@@ -245,17 +245,17 @@ export default function CampaignCard({ campaignAddress }: CampaignCardProps) {
                             className={`h-6 rounded-full ${getProgressColor()} transition-all duration-500 ease-out`}
                             style={{ width: `${balancePercentage}%` }}
                         >
-                            <span className="absolute right-2 text-white text-xs font-medium">
+                            <span className="absolute right-2 text-gray-400 text-xs font-medium">
                                 {balancePercentage >= 5 ? `${balancePercentage.toFixed(1)}%` : ''}
                             </span>
                         </div>
                     </div>
                     <div className="flex justify-between mt-2 text-sm">
                         <span className="text-gray-600 font-medium">
-                            Raised: {balance?.toString()} ETH
+                            Raised: {balance?.toString()} ETH(Wei)
                         </span>
                         <span className="text-gray-600">
-                            Goal: {goal?.toString()} ETH
+                            Goal: {goal?.toString()} ETH(Wei)
                         </span>
                     </div>
                     <div className="mt-1 text-xs font-medium">

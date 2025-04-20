@@ -20,7 +20,7 @@ export default function TierCard({ tier, index, contract, isEditing }: TierCardP
             <div>
                 <div className="flex flex-row justify-between items-center">
                     <p className="text-2xl font-semibold">{tier.name}</p>
-                    <p className="text-2xl font-semibold">${tier.amount.toString()}</p>
+                    <p className="text-2xl font-semibold">{tier.amount.toString()} ETH(Wei)</p>
                 </div>
             </div>
             <div className="flex flex-row justify-between items-end">

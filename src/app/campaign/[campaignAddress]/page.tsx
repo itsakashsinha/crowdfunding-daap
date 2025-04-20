@@ -115,13 +115,13 @@ export default function CampaignPage() {
                 )}
             </div>
             <div className="my-4">
-                <p className="text-lg font-semibold">Goal: {goal?.toString()}</p>
+                <p className="text-lg font-semibold">Goal: {goal?.toString()} ETH(Wei)</p>
             </div>
             {!isPendingBalance && !isPendingGoal && (
                 <div className="mb-4">
                     <div className="relative w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
                         <div className="h-6 bg-blue-600 rounded-full dark: bg-blue-600 text-right" style={{ width: `${balancePercentage?.toString()}%` }}>
-                            <p className="text-white dark:text-white text-xs p-1">${balance?.toString()}</p>
+                            <p className="text-white dark:text-white text-xs p-1">{balance?.toString()} ETH(Wei)</p>
                         </div>
                         <p className="absolute top-0 right-0 text-white dark:text-white text-xs p-1"></p>
                         {balancePercentage >= 100 ? "" : `${balancePercentage?.toString()}%`}
